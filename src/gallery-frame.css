@@ -1,0 +1,72 @@
+/* 按用户最终上传图片实施：浅木纹展框、斜切拼角和奶油白卡纸。
+   九宫格边框固定角部，仅延展边条；所有纹理静态绘制。 */
+.gallery .frame {
+  --wood-rim: 9px;
+  --mat-gutter: 10px;
+  position: relative;
+  padding: 0;
+  border: var(--wood-rim) solid #dfb37b;
+  border-image-source: url("./assets/light-wood-frame.svg");
+  border-image-slice: 12;
+  border-image-repeat: stretch;
+  border-radius: 0;
+  background: #fcf8ec;
+  box-shadow: 0 2px 3px #76532d26, 0 8px 12px -5px #4e3c2852;
+}
+.gallery .art-row { padding: 6px 0 10px; margin-bottom: 8px; }
+.gallery .art-row:last-child { margin-bottom: 0; }
+.gallery .frame-mat {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0;
+  min-width: 0;
+  padding: var(--mat-gutter);
+  background: linear-gradient(135deg, #fffdf6, #faf5e8);
+  box-shadow: inset 0 1px 3px #6b50353b, inset 0 0 0 1px #87674470;
+}
+.gallery .frame-mat::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 1px solid #dfd3b947;
+  pointer-events: none;
+}
+.gallery .moving-track,
+.gallery .track-group,
+.gallery .catalog-grid { align-items: start; }
+.gallery .frame img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  display: block;
+  flex-shrink: 0;
+  background: #fbf7ec;
+}
+.gallery .frame-label {
+  padding: 12px 0 2px;
+  color: var(--ink);
+}
+.gallery .frame-label b { color: var(--ink); }
+.gallery .catalog-item.frame { width: 100%; }
+.gallery .catalog-item.frame img {
+  height: auto;
+  padding: 0;
+  border: 0;
+}
+.gallery .catalog-item.frame .frame-label {
+  gap: 3px;
+  padding-top: 16px;
+}
+.gallery .frame:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 4px;
+}
+@media (max-width: 760px) {
+  .gallery .frame { --wood-rim: 8px; --mat-gutter: 8px; }
+  .gallery .frame-label { padding-top: 10px; }
+
+  .gallery .catalog-item.frame .frame-label { padding-top: 12px; }
+}
+

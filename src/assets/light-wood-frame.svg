@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+<defs>
+ <linearGradient id="top" x1="0" y1="0" x2="0" y2="12" gradientUnits="userSpaceOnUse"><stop stop-color="#b47e44"/><stop offset=".13" stop-color="#f5d39e"/><stop offset=".3" stop-color="#e7bb80"/><stop offset=".65" stop-color="#edc58b"/><stop offset=".86" stop-color="#d8a66b"/><stop offset="1" stop-color="#a1703e"/></linearGradient>
+ <linearGradient id="left" x1="0" y1="0" x2="12" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#b47e44"/><stop offset=".13" stop-color="#f1cb92"/><stop offset=".4" stop-color="#dfb075"/><stop offset=".8" stop-color="#ecc28a"/><stop offset="1" stop-color="#a1703e"/></linearGradient>
+ <linearGradient id="right" x1="72" y1="0" x2="60" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#b47e44"/><stop offset=".15" stop-color="#f3cd94"/><stop offset=".55" stop-color="#e4b77c"/><stop offset=".85" stop-color="#eec78e"/><stop offset="1" stop-color="#a1703e"/></linearGradient>
+ <linearGradient id="bottom" x1="0" y1="72" x2="0" y2="60" gradientUnits="userSpaceOnUse"><stop stop-color="#ac773f"/><stop offset=".12" stop-color="#ecc18a"/><stop offset=".4" stop-color="#dfaf73"/><stop offset=".8" stop-color="#f2ce95"/><stop offset="1" stop-color="#a1703e"/></linearGradient>
+ <pattern id="grain-h" width="27" height="6" patternUnits="userSpaceOnUse"><path d="M-3 2C4 .4 9 4 17 2.5S25 1 30 2.7M-3 5C5 4 11 6 18 4.6S26 4.5 30 5" fill="none" stroke="#946232" stroke-width=".5" opacity=".2"/></pattern>
+ <pattern id="grain-v" width="27" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(90)"><path d="M-3 2C4 .4 9 4 17 2.5S25 1 30 2.7M-3 5C5 4 11 6 18 4.6S26 4.5 30 5" fill="none" stroke="#946232" stroke-width=".5" opacity=".2"/></pattern>
+</defs>
+<path d="M0 0H72L60 12H12Z" fill="url(#top)"/><path d="M0 0H72L60 12H12Z" fill="url(#grain-h)"/>
+<path d="M0 0L12 12V60L0 72Z" fill="url(#left)"/><path d="M0 0L12 12V60L0 72Z" fill="url(#grain-v)"/>
+<path d="M72 0V72L60 60V12Z" fill="url(#right)"/><path d="M72 0V72L60 60V12Z" fill="url(#grain-v)"/>
+<path d="M0 72L12 60H60L72 72Z" fill="url(#bottom)"/><path d="M0 72L12 60H60L72 72Z" fill="url(#grain-h)"/>
+<rect x=".5" y=".5" width="71" height="71" fill="none" stroke="#9c6b37" stroke-width=".7"/>
+<rect x="11.6" y="11.6" width="48.8" height="48.8" fill="none" stroke="#60462e" stroke-width=".9"/>
+<path d="M.6 .6L11.6 11.6M71.4 .6L60.4 11.6M71.4 71.4L60.4 60.4M.6 71.4L11.6 60.4" fill="none" stroke="#986b3c" stroke-width=".65"/>
+</svg>
